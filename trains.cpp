@@ -6,6 +6,7 @@
 
 using namespace std;
 
+// Function to read CSV file and return a 2D vector of strings
 vector<vector<string>> readCSV(const string& filename) {
     vector<vector<string>> data;
     ifstream file(filename);
@@ -26,6 +27,8 @@ vector<vector<string>> readCSV(const string& filename) {
 }
 
 int main(){
+
+    // Import rail network, shipments, and shipment priority data from CSV files
 
     vector<vector<string>> railNetwork = readCSV("rail_network.csv");
 
